@@ -7,7 +7,7 @@ export type MiniApp = {
   logoUrl: string | null;
 };
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL!;
+const API_URL = process.env.NEXT_PUBLIC_APP_URL!;
 const MiniAppId = process.env.MINI_APP_ID!;
 
 export async function getMiniApp(): Promise<MiniApp> {
